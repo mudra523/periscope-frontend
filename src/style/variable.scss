@@ -1,0 +1,62 @@
+// Colors
+
+$yellow: #FFD33F;
+$black: #000000;
+$alert: #FF560F;
+$secondary: #FAF5EB;
+$gray: #909090;
+$primary: #19224D;
+$primary_mid: #EFE3CA;
+$primary_dark: #665D47;
+$powder_blue: #D9EEF3;
+$powder_pink: #F0C9D0;
+$powder_green: #B9DDB7;
+$powder_orange: #F98A5C;
+$pastel_green: #89C188;
+$white: #ffffff;
+
+$colors: (
+  yellow: $yellow,
+  black: $black,
+  alert: $alert,
+  secondary: $secondary,
+  gray: $gray,
+  primary: $primary,
+  primary_mid: $primary_mid,
+  primary_dark: $primary_dark,
+  powder_blue: $powder_blue,
+  powder_pink: $powder_pink,
+  powder_green: $powder_green,
+  powder_orange: $powder_orange,
+  pastel_green: $pastel_green,
+  white: $white,
+);
+
+// font weight
+$weight: (
+  regular_bold: 400,
+  medium_bold: 500,
+  semi_bold: 600,
+  bold: 700,
+);
+
+//font size
+$typography: (
+  xxsmall: 12px,
+  xsmall: 14px,
+  small: 16px,
+  regular: 18px,
+  medium: 20px,
+  normal: 24px,
+  large: 32px,
+  slarge: 38px,
+  xlarge: 48px,
+  xxlarge: 68px,
+);
+
+//text align
+$textalign: (
+  left: left,
+  center: center,
+  right: right,
+);
