@@ -1,0 +1,136 @@
+@import 'variable';
+
+* {
+  font-family: 'Poppins';
+}
+
+.btn_app_dark_x {
+  border: none !important;
+  background-color: hsl(196, 84%, 15%) !important;
+  color: #ffffff !important;
+
+  &:hover {
+    background-color: $light_blue !important;
+  }
+}
+
+.white_custom_link {
+  cursor: pointer;
+  color: #ffffff !important;
+
+  &:hover {
+    color: $light_blue !important;
+  }
+}
+
+.dark_custom_link {
+  cursor: pointer;
+  color: $primary_text !important;
+
+  &:hover {
+    color: $light_blue !important;
+  }
+}
+
+.btn_light_blue {
+  border: none !important;
+  background-color: $light_blue !important;
+  color: $light_app !important;
+
+  &:hover {
+    background-color: $blue_shadow !important;
+  }
+}
+
+.btn_red {
+  border: none !important;
+  background-color: $red !important;
+  color: $white !important;
+
+  &:hover {
+    background-color: #e66b4d !important;
+  }
+}
+
+.btn_secondary {
+  border: none !important;
+  background-color: $white_shade !important;
+  color: $light_blue !important;
+
+  &:hover {
+    background-color: $light_blue !important;
+    color: $white_shade !important;
+  }
+}
+
+.btn_link_secondary {
+  color: $secondary_text !important;
+  background-color: $light_color !important;
+
+  &:hover {
+    background-color: $green_shadow !important;
+    border-color: $light_blue !important;
+  }
+  &:focus {
+    background-color: $green_shadow !important;
+    border-color: $light_blue !important;
+  }
+}
+
+.content_center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.tag_crypto_table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px !important;
+  min-width: 60px;
+  padding-left: 1em;
+  padding-right: 1em;
+  &.tag_purchase {
+    &.medium_tag {
+      height: 35px !important;
+    }
+    &.small_tag {
+      height: 25px !important;
+    }
+    background-color: rgba(224, 71, 33, 0.1) !important;
+    color: #e04721 !important;
+    &:hover {
+      border: none;
+    }
+  }
+  &.tag_sell {
+    &.medium_tag {
+      height: 35px !important;
+    }
+    &.small_tag {
+      height: 25px !important;
+    }
+    background-color: rgba(13, 191, 61, 0.1) !important;
+    color: #0dbf3d !important;
+    &:hover {
+      border: none;
+    }
+  }
+}
+
+//title responsive changes
+.title_text {
+  font-size: 38px;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+// Variables
+@import './variable.scss';
+
+//base setup
+@import './base/mixins';
+@import './base/colors';
+@import './base/typography';
+
+//components
+// @import './footer.scss';
+// @import './header.scss';
+
+//pages
+@import './global.scss';
