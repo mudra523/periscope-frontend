@@ -6,9 +6,8 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <Layout>
-      <div style={{color: "red"}}>
+      <>{console.log("Home")}</>
       Home
-      </div>
     </Layout>
   );
 };
