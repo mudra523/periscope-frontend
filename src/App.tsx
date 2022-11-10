@@ -6,8 +6,6 @@ import PageNotFound from "./pages/PageNotFound/index";
 import { AuthProvider } from "./components/Auth";
 import RequireAuth from "./components/RequireAuth";
 
-import "./App.less";
-
 function App() {
   return (
     <>

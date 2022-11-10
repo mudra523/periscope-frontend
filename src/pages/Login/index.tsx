@@ -5,9 +5,8 @@ type Props = {}
 
 const Login: React.FC = (props: Props) => {
   return (
-    <AuthLayout>
-    <>{console.log("Login")}</>
-    Login</AuthLayout>
+    <AuthLayout>Login
+   </AuthLayout>
   )
 }
 
