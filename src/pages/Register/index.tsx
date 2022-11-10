@@ -7,7 +7,7 @@ type Props = {}
 const Register = (props: Props) => {
   return (
     <AuthLayout>
-    <>{console.log("Login")}</>Login</AuthLayout>
+    Register</AuthLayout>
   )
 }
 

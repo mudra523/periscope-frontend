@@ -12,8 +12,9 @@ const AuthLayout = (props: Props) => {
   return (
     <Layout
     style={{ display: "flex", minHeight: "100vh", flexDirection: "column", }}
+    className='bg_alert'
   >
-    <div className='bg_alert'>
+    <div>
     <Row>
       <Col span={12}>{children}</Col>
       <Col span={12}></Col>
