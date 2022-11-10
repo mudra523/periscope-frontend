@@ -1,8 +1,9 @@
 import React from "react";
 import { Layout } from "antd";
-import Footer from "./footer";
-import Header from "./header";
-const { Content } = Layout;
+import LeftNavBar from "./leftNavBar";
+import styles from "./index.module.css";
+
+const { Content, Sider } = Layout;
 
 interface Props {
   children: React.ReactNode;
@@ -12,18 +13,11 @@ interface Props {
 const Index = (props: Props) => {
   const { children } = props;
   return (
-    <Layout
-      style={{ display: "flex", minHeight: "100vh", flexDirection: "column" }}
-    >
-      <div>
-        <Header />
-      </div>
-      <div style={{ flex: "1" }}>
-        <Content>{children}</Content>
-      </div>
-      <div>
-        <Footer />
-      </div>
+    <Layout>
+      <Sider width={350} className={styles.sideBarNavigation} breakpoint="sm" collapsedWidth={0}>
+        <LeftNavBar/>
+      </Sider>
+      <Content>{children}</Content>
     </Layout>
   );
 };
