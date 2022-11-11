@@ -1,0 +1,14 @@
+.main_layout{
+  width: 100%;
+  min-height: 100vh !important;
+  background-color: #FFFFFF;
+}
+
+.profile_img{
+  border-radius: 50% !important;
+}
+
+.profile_text{
+  display: flex;
+  flex-direction: column;
+}

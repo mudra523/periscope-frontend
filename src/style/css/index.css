@@ -1,21 +1,150 @@
-.text_yellow{
-    color:#FFD33F;
+.text_yellow {
+  color: #ffd33f !important;
 }
 
-.bg_yellow{
-    background-color:#FFD33F;
+.bg_yellow {
+  background-color: #ffd33f !important;
 }
 
-/* black: #000000;
-$alert: #FF560F;
-$secondary: #FAF5EB;
-$gray: #909090;
-$primary: #19224D;
-$primary_mid: #EFE3CA;
-$primary_dark: #665D47;
-$powder_blue: #D9EEF3;
-$powder_pink: #F0C9D0;
-$powder_green: #B9DDB7;
-$powder_orange: #F98A5C;
-$pastel_green: #89C188;
-$white: #ffffff; */
+.text_black {
+  color: #000000 !important;
+}
+
+.bg_black {
+  background-color: #000000 !important;
+}
+
+.text_alert {
+  color: #ff560f !important;
+}
+
+.bg_alert {
+  background-color: #ff560f !important;
+}
+
+.text_secondary {
+  color: #faf5eb !important;
+}
+
+.bg_secondary {
+  background-color: #faf5eb !important;
+}
+
+.text_gray {
+  color: #909090 !important;
+}
+
+.bg_gray {
+  background-color: #909090 !important;
+}
+
+.text_primary {
+  color: #19224d !important;
+}
+
+.bg_primary {
+  background-color: #19224d !important;
+}
+
+.text_primary_mid {
+  color: #efe3ca !important;
+}
+
+.bg_primary_mid {
+  background-color: #efe3ca !important;
+}
+
+.text_primary_mid {
+  color: #efe3ca !important;
+}
+
+.bg_primary_mid {
+  background-color: #efe3ca !important;
+}
+
+.text_primary_dark {
+  color: #665d47 !important;
+}
+
+.bg_primary_dark {
+  background-color: #665d47 !important;
+}
+
+.text_powder_blue {
+  color: #d9eef3 !important;
+}
+
+.bg_powder_blue {
+  background-color: #d9eef3 !important;
+}
+
+.text_powder_pink {
+  color: #f0c9d0 !important;
+}
+
+.bg_powder_pink {
+  background-color: #f0c9d0 !important;
+}
+
+.text_powder_green {
+  color: #b9ddb7 !important;
+}
+
+.bg_powder_green {
+  background-color: #b9ddb7 !important;
+}
+
+.text_powder_orange {
+  color: #f98a5c !important;
+}
+
+.bg_powder_orange {
+  background-color: #f98a5c !important;
+}
+
+.text_pastel_green {
+  color: #89c188 !important;
+}
+
+.bg_pastel_green {
+  background-color: #89c188 !important;
+}
+
+.text_white {
+  color: #ffffff !important;
+}
+
+.bg_white {
+  background-color: #ffffff !important;
+}
+
+.text_bold {
+  font-weight: 700 !important;
+}
+
+.text_semi_bold {
+  font-weight: 600 !important;
+}
+
+.text_medium_bold {
+  font-weight: 500 !important;
+}
+
+.text_regular_bold {
+  font-weight: 400 !important;
+}
+
+.text_left {
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+.text_right {
+  align-items: flex-end !important;
+  text-align: right !important;
+}
+
+.text_center {
+  align-items: center !important;
+  text-align: center !important;
+}
