@@ -1,0 +1,7 @@
+.card_main_div{
+    position: "relative" !important;
+    display: "flex" !important;
+    width: "100%" !important;
+    flex-direction: "column" !important;
+    padding: "2em" !important;
+}

@@ -8,7 +8,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
 import { Provider } from "react-redux";
 import "./App.less";
-// import "../src/style/App.scss"
+// import "../src/style/scss/App .scss"
 
 let persistor = persistStore(store);
 const root = ReactDOM.createRoot(

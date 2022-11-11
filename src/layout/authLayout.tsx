@@ -10,16 +10,11 @@ interface Props {
 const AuthLayout = (props: Props) => {
   const { children } = props;
   return (
-    <Layout
-    style={{ display: "flex", minHeight: "100vh", flexDirection: "column", }}
-    className='bg_alert'
-  >
-    <div>
+    <Layout>
     <Row>
       <Col span={12}>{children}</Col>
       <Col span={12}></Col>
     </Row>
-    </div>
   </Layout>
     
   )

@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 import LeftNavBar from "./leftNavBar";
-import styles from "./index.module.css";
+import "./index.css";
 
 const { Content, Sider } = Layout;
 
@@ -13,11 +13,21 @@ interface Props {
 const Index = (props: Props) => {
   const { children } = props;
   return (
-    <Layout>
-      <Sider width={350} className={styles.sideBarNavigation} breakpoint="sm" collapsedWidth={0}>
-        <LeftNavBar/>
+    <Layout className="main_layout">
+      <Sider
+        breakpoint="lg"
+        collapsedWidth="0"
+        onBreakpoint={(broken) => {
+          console.log(broken);
+        }}
+        onCollapse={(collapsed, type) => {
+          console.log(collapsed, type);
+        }}
+        style={{ padding: "0.5em" }}  
+      >
+        <LeftNavBar />
       </Sider>
-      <Content>{children}</Content>
+      <Content style={{ padding: "1em" }} >{children}</Content>
     </Layout>
   );
 };
