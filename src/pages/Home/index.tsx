@@ -1,7 +1,7 @@
 import React from "react";
-import { Row, Col, Card } from "antd";
+import { Row, Col } from "antd";
 import Layout from "../../layout/index";
-import RoomCard from "../../components/roomCard/roomCard";
+import RoomCard from "../../components/RoomCard/RoomCard";
 
 type Props = {};
 

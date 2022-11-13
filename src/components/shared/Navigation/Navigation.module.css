@@ -1,0 +1,48 @@
+.navbar {
+  padding: 20px 0;
+}
+
+.brandStyle {
+  color: #19224D;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.logoSizing {
+  height: 27px;
+}
+
+.logoText {
+  margin-left: 13px;
+}
+
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoutButton {
+  background: #19224D;
+  color: white;
+  padding: 9px 15px;
+  border-radius: 25px;
+  /* cursor: pointer; */
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #19224D;
+  margin: 0 20px;
+  margin-right: 10px;
+}
