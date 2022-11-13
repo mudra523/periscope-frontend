@@ -1,15 +1,11 @@
-import React from "react";
-import Layout from "../../layout/index";
+import React from 'react'
 
-type Props = {};
+type Props = {}
 
-const Home = (props: Props) => {
+const Room = (props: Props) => {
   return (
-    <Layout>
-      <>{console.log("Home")}</>
-      Home
-    </Layout>
-  );
-};
+    <div>Room</div>
+  )
+}
 
-export default Home;
+export default Room
