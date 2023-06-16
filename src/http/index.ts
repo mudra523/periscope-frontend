@@ -3,6 +3,25 @@ import axios from 'axios';
 // we can directly use .post(), .get() methods with axios like this: axios.post().
 // with .create([config]) we are creating new instance of axios with our config and storing it in api.
 
+interface PhoneNumberReqBody {
+  phone: string
+}
+
+interface OtpReqBody {
+  otp: string,
+  phone: string,
+  hash: string,
+}
+
+interface ActivateReqBody {
+  name: string,
+  avatar: any,
+}
+
+interface createRoomReqBody {
+  topic: string,
+}
+
 const api = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
   withCredentials: true,
@@ -13,18 +32,23 @@ const api = axios.create({
 });
 
 
-//list of all the endpoints
-
 //all of this functions returns a promise 
-export const sendOtp = (data) => api.post('/api/send-otp', data);
-export const verifyOtp = (data) => api.post('/api/verify-otp', data);
-export const activate = (data) => api.post('/api/activate', data);
+export const sendOtp = (data: PhoneNumberReqBody) => api.post('/api/send-otp', data);
+export const verifyOtp = (data: OtpReqBody) => api.post('/api/verify-otp', data);
+export const activate = (data: ActivateReqBody) => api.post('/api/activate', data);
 export const logout = () => api.post('/api/logout');
-export const createRoom = (data) => api.post('/api/rooms', data);
+export const createRoom = (data: createRoomReqBody) => api.post('/api/rooms', data);
 export const getAllRooms = () => api.get('/api/rooms');
-export const getRoom = (roomId) => api.get(`/api/room/${roomId}`)
+export const getRoom = (roomId: number) => api.get(`/api/room/${roomId}`)
 
-// Interceptors will intercepts all the above request which from fontend end to backend.
+// error type declaration hadeling
+function getErrorMessage(error: unknown) {
+  if (error instanceof Error) return error.message
+  return String(error)
+}
+
+
+// Interceptors will intercepts all the above request from fontend end to backend.
 api.interceptors.response.use(
   (config) => {
     return config;
@@ -48,8 +72,8 @@ api.interceptors.response.use(
         );
 
         return api.request(originalRequest);
-      } catch (err) {
-        console.log(err.message);
+      } catch (error) {
+        console.log(getErrorMessage(error));
       }
     }
     throw error;
