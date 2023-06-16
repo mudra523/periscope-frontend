@@ -39,6 +39,9 @@ function App() {
               <Room/>
             </UserRoute>
           }/>
+          <Route path="/*" element={
+            <Navigate to="/" replace />
+          }/>
         </Routes>
       </BrowserRouter>
     </>
